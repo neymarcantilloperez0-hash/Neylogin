@@ -1,0 +1,30 @@
+name: NeyLogin
+version: 1.0.0
+main: com.neylogin.NeyLogin
+api-version: '1.20'
+author: Ney
+description: Plugin de registro e inicio de sesion para servidores no premium.
+commands:
+  register:
+    description: Crea tu cuenta.
+    usage: /register <contraseña> <contraseña>
+    aliases: [reg]
+  login:
+    description: Inicia sesión.
+    usage: /login <contraseña>
+    aliases: [l]
+  changepassword:
+    description: Cambia tu contraseña.
+    usage: /changepassword <actual> <nueva>
+    aliases: [changepass, cp]
+  logout:
+    description: Cierra tu sesión.
+    usage: /logout
+  neylogin:
+    description: Administración de NeyLogin.
+    usage: /neylogin <reload|unregister|forcelogin|setpass>
+    permission: neylogin.admin
+permissions:
+  neylogin.admin:
+    description: Administrar NeyLogin
+    default: op
