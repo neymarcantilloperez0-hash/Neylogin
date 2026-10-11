@@ -1,0 +1,40 @@
+min-password-length: 6
+max-password-length: 64
+timeout-seconds: 60
+max-attempts: 5
+session-minutes: 10
+max-accounts-per-ip: 3
+blindness: true
+reminder-seconds: 10
+allowed-commands: [login, l, register, reg]
+
+messages:
+  prefix: "&8[&bNeyLogin&8] &r"
+  register-prompt: "&eRegístrate con &b/register <contraseña> <contraseña>&e."
+  login-prompt: "&eInicia sesión con &b/login <contraseña>&e."
+  register-success: "&a¡Cuenta creada! Has iniciado sesión."
+  login-success: "&aSesión iniciada correctamente."
+  session-restored: "&aSesión restaurada automáticamente."
+  already-logged: "&cYa has iniciado sesión."
+  already-registered: "&cYa tienes cuenta. Usa &e/login <contraseña>&c."
+  not-registered: "&cNo tienes cuenta. Usa &e/register <contraseña> <contraseña>&c."
+  usage-register: "&cUso: &e/register <contraseña> <contraseña>"
+  usage-login: "&cUso: &e/login <contraseña>"
+  usage-change: "&cUso: &e/changepassword <actual> <nueva>"
+  password-short: "&cLa contraseña debe tener al menos {min} caracteres."
+  password-long: "&cLa contraseña no puede superar {max} caracteres."
+  password-mismatch: "&cLas contraseñas no coinciden."
+  too-many-accounts: "&cYa hay demasiadas cuentas registradas desde tu IP."
+  wrong-password: "&cContraseña incorrecta. Intento {attempt} de {max}."
+  password-changed: "&aContraseña cambiada correctamente."
+  login-first: "&cPrimero debes iniciar sesión con &e/login <contraseña>&c."
+  logged-out: "&eHas cerrado sesión."
+  kick-timeout: "&cNeyLogin&f: tiempo de inicio de sesión agotado."
+  kick-attempts: "&cNeyLogin&f: demasiados intentos fallidos."
+  no-permission: "&cNo tienes permiso."
+  player-not-found: "&cJugador no encontrado."
+  admin-reloaded: "&aConfiguración recargada."
+  admin-unregistered: "&aCuenta de {player} eliminada."
+  admin-forcelogin: "&aSesión de {player} forzada."
+  admin-setpass: "&aContraseña de {player} actualizada."
+  admin-usage: "&cUso: &e/neylogin <reload|unregister|forcelogin|setpass> [jugador] [contraseña]"
